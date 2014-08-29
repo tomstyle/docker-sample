@@ -6,5 +6,5 @@ MAINTAINER Takayuki Tomiyama <tomiyama@gmail.com>
 RUN echo "now buidlding"
 
 #CMD: runするときに実行される
-#CMD: "now running…"
+#CMD: "now running…" neko
 CMD ["echo", "now running"]
