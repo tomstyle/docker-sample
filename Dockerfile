@@ -1,5 +1,10 @@
-FROM eiel/gentoo-sample:banner
-MAINTAINER Tomohiko Himura <eiel.hal@gmail.com>
+FROM centos
+MAINTAINER Takayuki Tomiyama <tomiyama@gmail.com>
 
-ENV BANNER_ENV docker
-CMD banner $BANNER_ENV
+# RUN: buildするときに実行される
+
+RUN echo "now buidlding"
+
+#CMD: runするときに実行される
+#CMD: "now running…"
+CMD ["echo", "now running"]
